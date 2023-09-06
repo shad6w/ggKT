@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SJBCS4</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    
+    <div class="text-boxes">
+      <div class="text-box HTMLBox">
+        <div class="topic">FORM</div>
+        <textarea id="HTMLBox" readonly>
+            <html>
+                <head>
+                <form>
+                <center>
+                <table border="2" align="ceter">
+                <tr>
+                <th colspan="2">STUDENT REGESTRITION</th>
+                </tr>
+                <tr>
+                <td>NAME</td>
+                <td><input type="text" name="student_name" placeholder="ENTER THE STUDENT NAME" required></td>
+                </tr>
+                <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gender">MAle<input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                <td>FATHER NAME</td>
+                <td><input type="text" name="student_name" placeholder="ENTER THE FATHER NAME" required></td>
+                </tr>
+                <tr>
+                <td>MOTHER NAME</td>
+                <td><input type="text" name="student_name" placeholder="ENTER THE MOTHER NAME" required></td>
+                </tr>
+                <tr>
+                <td>DOB</td>
+                <td><input type="date"   id="DOB" name="student_name"  required></td>
+                </tr>
+                <tr>
+                <td>ADREESS</td>
+                <td><input type="text" id="address" name="address" palceholder="eneter the address" required></td>
+                </tr>
+                <tr>
+                <td>COURSE</td>
+                <td><input type="checkbox" id="CSE" value="cCSE" name="CSE">CSE<input type="checkbox" id="MES" value="MES" name="MES">MES<input type="checkbox" id="MBA" name="MBA" value="MBA">MBA </td>
+                </tr>
+                <tr>
+                <td>languages</td>
+                <td><select name="language" id="language">
+                <option value="select">
+                <option value="KANNAD">KANNADA</option>
+                <option value="HINDI">HINDI</option>
+                <option value="ENGLISH">ENGLISH</option>
+                </select>
+                </td>
+                </tr>
+                <tr>
+                <td>ADMISSION</td>
+                <td>
+                <select name="Addmission> id="addmission">
+                <option value="select">
+                <option value="2019-2021">2019-2021</option>
+                <option value="2018-2019">2018-2019</option>
+                <option value="2016-2015">2016-2015</option>
+                </select>
+                </td>
+                </tr>
+                <tr>
+                <td>CONTACT NUMBER</td>
+                <td><input type="text" id="number" maxlength="10" placeholder="enter the contact number" required</td>
+                </tr>
+                <tr>
+                <td>E-MAIL</td>
+                <td><input type="email" name="email" placeholder="ENTER THE mzil" required></td>
+                </tr>
+                <tr><td>
+                <input type="submit" value="submit"></td>
+                <td><input type="reset" value="reset">
+                </td>
+                </tr>
+                </table>
+                </center>
+                </form>
+                </head>
+                </html>
+        </textarea>
+        <button id="HTMLButton">Copy Codes</button>
+      </div>
+      
+      
+      <div class="text-box CSSBox">
+        <div class="topic">CALCI</div>
+        <textarea id="CSSBox" readonly>
+            <html>
+                <head>
+                <script language="javascript">
+                var inputstring="";
+                function upadatestring(value)
+                {
+                inputstring=inputstring+value;
+                document.calculator.input.value=inputstring;
+                }
+                </script>
+                </head>
+                <body>
+                <form name="calculator">
+                <table border="4" align="center" bgcolor="pink" bordercolor="black">
+                
+                <tr>
+                <td colspan="4"><input type="text" name="input" maxlength="15" size="27"></td>
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="clear" onclick="input.value=' ';inputstring=' '";></td>
+                <td><input type="button" value="mod" onclick="updatestring('%')"></td>
+                <td><input type="button" value="" onclick="updatestring('')"></td>
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="7" onclick="upadatestring('7')"></td>
+                <td><input type="button" value="8" onclick="upadatestring('8')"></td>
+                <td><input type="button" value="9" onclick="upadatestring('9')"></td>
+                <td><input type="button" value="/" onclick="upadatestring('/')"></td>
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="4" onclick="upadatestring('4')"></td>
+                <td><input type="button" value="5" onclick="upadatestring('5')"></td>
+                <td><input type="button" value="6" onclick="upadatestring('6')"></td>
+                <td><input type="button" value="+" onclick="upadatestring('+')"></td>
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="1" onclick="upadatestring('1')"></td>
+                <td><input type="button" value="2" onclick="upadatestring('2')"></td>
+                <td><input type="button" value="3" onclick="upadatestring('3')"></td>
+                <td><input type="button" value="-" onclick="upadatestring('-')"></td>
+                </tr>
+                
+                
+                <tr>
+                <td><input type="button" value="0" onclick="upadatestring('0')"></td>
+                <td><input type="button" value="00" onclick="upadatestring('00')"></td>
+                <td><input type="button" value="." onclick="upadatestring('.')"></td>
+                <td><input type="button" value="=" onclick="input.value=eval(inputstring)"></td>
+                </tr>
+                
+                </table>
+                </form>
+                </body>
+                </html>
+        </textarea>
+        <button id="CSSButton">Copy Codes</button>
+      </div>
+      <div class="text-box JSBox">
+        <div class="topic">STRINGCHECK</div>
+        <textarea id="JSBox" readonly>
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<script type="text/javascript">
+
+var str prompt("Enter Input: ");
+
+if (lisNaN(str)) {
+
+var num, rev=0, rem;
+
+num= parseInt(str);
+
+while (num != 0) {
+
+rem- num X 10;
+
+num= parseInt(num / 10);
+
+rev rev 10+ rem;
+
+alert("Reverse of str + rev);
+
+}
+
+else {
+
+str = str.toUpperCase();
+
+var vowelFound = false;
+
+for (var i = 0; i < str.length; i++) {
+
+var chr- str.charAt(1); if (chr 'A' || chr 'E' || chr=- 'I' li chr='0' ¡¡ chr == 'U') { alert("The position of left most vowel is "+ (1 + 1)); vowelFound true;
+
+break; // Exit the Loop when a vowel is found
+
+}
+
+}
+
+if (IvowelFound) {
+
+alert("No vowel found");
+
+}
+
+</script>
+
+</body>
+</html>
+      </textarea>
+        <button id="JSButton">Copy Codes</button>
+      </div>
+    
+
+    <div class="text-box JSBox">
+      <div class="topic">CLOCK</div>
+      <textarea id="JSBox2" readonly>
+        < html>
+<head>
+<title>Digital clock</title>
+<style>
+#demo{
+border-radius:25px;
+width:600px;
+height:120px;
+color:#030d1b;
+font-weight:bold; font-size:90px;
+margin-top:100px;
+padding:50px;
+}
+h1{
+color:#ffffff;
+font-family:Trebuchet MS;
+</style>
+</head>
+<body style="background-color:#0fe58a;">
+<center>
+<h1>Digital Chronograph </h1>
+</center>
+<hr color="#ffffff">
+<center>
+<div id="demo" style="background-color:#dcffde;"></div>
+</center>
+<script>
+var myvar=setInterval(mytimer, 1000);
+function mytimer(){
+var d=new Date();
+document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+}
+</script>
+</body>
+ </html>
+
+</textarea>
+  <button id="JSButton2">Copy Codes</button>
+</div>
+
+
+
+
+<div class="text-box JSBox">
+  <div class="topic">SQUARE AND CUBES</div>
+  <textarea id="JSBox3" readonly>
+    <!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Squares and cubes</title>
+
+<style>
+
+
+table, tr, td{
+
+border: solid black;
+
+width: 33%;
+
+text-align: center;
+
+border-collapse: collapse; background-color:#afe9e2;
+
+}
+
+
+
+table {
+
+margin: auto;
+
+}
+
+</style>
+
+
+
+<script>
+document.write("
+
+<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH SQUARES AND CUBES </th></tr>" ); document.write("<tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+
+for(var n=0; n<=10; n++)
+
+
+{
+
+document.write("<tr><td>" + n + "</td><td>" + n*n + "</td><td>"+ n*n*n
+
++"</td></tr>");
+
+
+
+}
+
+document.write("</table>");
+
+
+</script>
+
+
+} 
+
+</head>
+
+</html>
+</textarea>
+  <button id="JSButton3">Copy Codes</button>
+</div>
+</div>
+    <script>
+      // HTML BOx JS Code
+      let HTMLBox = document.getElementById("HTMLBox");
+      let HTMLButton = document.getElementById("HTMLButton");
+
+      HTMLButton.onclick = function () {
+        HTMLBox.select();
+        document.execCommand("copy");
+        HTMLButton.innerText = "Codes Copied";
+      };
+
+      // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function () {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function () {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox2 = document.getElementById("JSBox2");
+      let JSButton2 = document.getElementById("JSButton2");
+
+      JSButton2.onclick = function () {
+        JSBox2.select();
+        document.execCommand("copy");
+        JSButton2.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox3 = document.getElementById("JSBox3");
+      let JSButton3 = document.getElementById("JSButton3");
+
+      JSButton3.onclick = function () {
+        JSBox3.select();
+        document.execCommand("copy");
+        JSButton3.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox4 = document.getElementById("JSBox4");
+      let JSButton4 = document.getElementById("JSButton4");
+
+      JSButton4.onclick = function () {
+        JSBox4.select();
+        document.execCommand("copy");
+        JSButton4.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox5 = document.getElementById("JSBox5");
+      let JSButton5 = document.getElementById("JSButton5");
+
+      JSButton5.onclick = function () {
+        JSBox5.select();
+        document.execCommand("copy");
+        JSButton5.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox6 = document.getElementById("JSBox6");
+      let JSButton6 = document.getElementById("JSButton6");
+
+      JSButton6.onclick = function () {
+        JSBox6.select();
+        document.execCommand("copy");
+        JSButton6.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox7 = document.getElementById("JSBox7");
+      let JSButton7 = document.getElementById("JSButton7");
+
+      JSButton7.onclick = function () {
+        JSBox7.select();
+        document.execCommand("copy");
+        JSButton7.innerText = "Codes Copied";
+      };
+      let JSBox8 = document.getElementById("JSBox8");
+      let JSButton8 = document.getElementById("JSButton8");
+
+      JSButton8.onclick = function () {
+        JSBox8.select();
+        document.execCommand("copy");
+        JSButton8.innerText = "Codes Copied";
+      };
+      let JSBox9 = document.getElementById("JSBox9");
+      let JSButton9 = document.getElementById("JSButton9");
+
+      JSButton9.onclick = function () {
+        JSBox9.select();
+        document.execCommand("copy");
+        JSButton9.innerText = "Codes Copied";
+      };
+      let JSBox10 = document.getElementById("JSBox10");
+      let JSButton10 = document.getElementById("JSButton10");
+
+      JSButton10.onclick = function () {
+        JSBox10.select();
+        document.execCommand("copy");
+        JSButton10.innerText = "Codes Copied";
+      };
+      let JSBox11 = document.getElementById("JSBox11");
+      let JSButton11 = document.getElementById("JSButton11");
+
+      JSButton11.onclick = function () {
+        JSBox11.select();
+        document.execCommand("copy");
+        JSButton11.innerText = "Codes Copied";
+      };
+      let JSBox12 = document.getElementById("JSBox12");
+      let JSButton12 = document.getElementById("JSButton12");
+
+      JSButton12.onclick = function () {
+        JSBox12.select();
+        document.execCommand("copy");
+        JSButton12.innerText = "Codes Copied";
+      };
+      let JSBox13 = document.getElementById("JSBox13");
+      let JSButton13 = document.getElementById("JSButton13");
+
+      JSButton13.onclick = function () {
+        JSBox13.select();
+        document.execCommand("copy");
+        JSButton13.innerText = "Codes Copied";
+      };
+      let JSBox14 = document.getElementById("JSBox14");
+      let JSButton14 = document.getElementById("JSButton14");
+
+      JSButton14.onclick = function () {
+        JSBox14.select();
+        document.execCommand("copy");
+        JSButton14.innerText = "Codes Copied";
+      };
+      let JSBox15 = document.getElementById("JSBox15");
+      let JSButton15 = document.getElementById("JSButton15");
+
+      JSButton15.onclick = function () {
+        JSBox15.select();
+        document.execCommand("copy");
+        JSButton15.innerText = "Codes Copied";
+      };
+      let JSBox16 = document.getElementById("JSBox16");
+      let JSButton16 = document.getElementById("JSButton16");
+
+      JSButton16.onclick = function () {
+        JSBox16.select();
+        document.execCommand("copy");
+        JSButton16.innerText = "Codes Copied";
+      };
+      let JSBox17 = document.getElementById("JSBox17");
+      let JSButton17 = document.getElementById("JSButton17");
+
+      JSButton17.onclick = function () {
+        JSBox17.select();
+        document.execCommand("copy");
+        JSButton17.innerText = "Codes Copied";
+      };
+      
+      
+      
+      
+    </script>
+  </body>
+</html>
